@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+
+
+<body>
+
+
+  <div class="inicio">
+  </div>
+
+  <div class="familia">
+    <img src="/logo_cabecera.png">
+    </div>
+
+    <div class="contenedor1">
+    </div>
+
+    <p class="conocerte">DÉJANOS CONOCERTE</p>
+
+    <div class="rojo">
+    </div>
+
+    <div class="contenedor2">
+      </div>
+
+
+    <p class="comparte">¡Compártenos tu información!</p>
+
+    <p class="deja">Dejanos tus datos personales y nosotros nos comunicaremos contigo lo más pronto posible. </p>
+
+
+    <div class="formulario">
+<form action="" name="contenedorformulario"  method="post">
+
+<p>
+</label>
+  <input  type="text" name="nombre*" id="nombre" required="obligatorio" placeholder="Nombre completo*"></p>
+  <p>
+  </label>
+  <input type="text" name="correo electronico*" id="correo" required="obligatorio" placeholder="Correo electronico*"></p>
+  <p>
+  </label>
+  <input type="text" name="celular" id="celular" required="obligatorio" placeholder="Celular*"></p>
+  <p>
+  </label>
+  <input type="text" name="Ciudad" id="ciudad" placeholder="Ciudad"></p>
+  <p>
+  </label>
+  <input type="text" name="Localidad" id="localidad" placeholder="Localidad"></p>
+
+</form>
+</div>
+
+<div class="formulario2">
+  <form action=""  method="post">
+
+    <p>
+    </label>
+      <input  type="text" name="Estado" id="estado" placeholder="Estado"></p>
+      <p>
+      </label>
+      <input type="text" name="Colonia" id="colonia" placeholder="Colonia"></p>
+      <p>
+
+        <p>
+        </label>
+        <input list="editors" name="formularios" id="formularios" placeholder="Elige tu area de interes">
+        <datalist id="editors">
+          <option value="Cajas">
+            <option value="Servicios">
+              <option value="Asesoramiento Financiero">
+             <option value="Gestor y cobranza">
+                  <option value="Credito">
+                    <option value="Juridico">
+                      <option value="Mercadoctenia">
+                        <option value="Diligencias">
+                             <option value="Compras">
+                               <option value="Intendencia">
+                                <option value="Auditoria">
+                                  <option value="Capital Humano">
+                                    <option value="Mantenimiento">
+                                         <option value="Sistemas">
+                                           <option value="Contabilidad">
+                                            <option value="Administración">
+              </datalist>
+  </form>
+</div>
+
+<div class="contenedor3">
+</div>
+<div class="bloque">
+  <label></label>
+  <p><button>Seleccionar archivos</button>Sin archivos seleccionados</p>
+</div>
+<br>
+
+<p class="cucu">Sube tu Curriculum en Formato PDF (no exceder de 5MB)
+</p>
+
+<div class="archivo">
+  <img src="/icono_pdf.png">
+  </div>
+
+  <div class="boton1">
+    <button type="button" value="Enviar" id="enviar"  onclick="valida_enviar()"class="pre">Enviar</button>
+   
+    </div>
+    </div>
+
+
+
+<p class="nombre">Pablo Israel Landaverde Caballero<br>
+  7SB<br>
+  Programación Web<br>
+</p>
+
+<script>
+  function valida_enviar(){
+  
+    if( document.contenedorformulario.nombre.value.length==0){
+    alert("tienes que escribir tu nombre completo")
+    document.contenedorformulario.nombre.focus()
+    return 0;
+    }
+
+    if( document.contenedorformulario.correo.value.length==0){
+    alert("tienes que escribir tu correo electronico")
+    document.contenedorformulario.correo.focus()
+    return 0;
+    }
+
+    if( document.contenedorformulario.celular.value.length==0){
+    alert("tienes que escribir tu celular")
+    document.contenedorformulario.celular.focus()
+    return 0;
+    }
+  }
+
+
+
+</script>
+
+
+</body>
+</html>
